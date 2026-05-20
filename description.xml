@@ -1,13 +1,14 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <description
  xmlns="http://openoffice.org/extensions/description/2006"
- xmlns:dep="http://openoffice.org/extensions/description/2006"
+ xmlns:d="http://openoffice.org/extensions/description/2006"
+ xmlns:l="http://libreoffice.org/extensions/description/2011"
  xmlns:xlink="http://www.w3.org/1999/xlink">
-	<identifier value="removeduplicates"/>
-	<version value="0.0.1"/>
-	<!-- <dependencies>
-		<OpenOffice.org-minimal-version value="2.1" dep:name="OpenOffice.org 2.1"/>
-	</dependencies> -->
+	<identifier value="org.ossii.CalcRemoveDuplicates"/>
+	<version value="0.0.5"/>
+	<dependencies>
+		<l:LibreOffice-minimal-version value="6.1" d:name="LibreOffice 6.1" />
+	</dependencies>
 	<registration>
 		<simple-license  accept-by="admin" default-license-id="ID0" suppress-on-update="true" >
 			<license-text xlink:href="registration/gpl-3.0.txt" lang="en" license-id="ID0" />
@@ -33,6 +34,5 @@
   <release-notes>
     <src xlink:href="pkg-desc/release-notes_en.txt" lang="en" />
     <src xlink:href="pkg-desc/release-notes_zh_CN.txt" lang="zh-CN" />
-    <src xlink:href="pkg-desc/release-notes_zh_TW.txt" lang="zh-TW" />
   </release-notes>
 </description>
