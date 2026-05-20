@@ -81,6 +81,27 @@
                 </node> <!-- RD003 -->
             </node>
         </node> <!-- OfficeMenuBarMerging -->
+        <node oor:name="OfficeNotebookBar">
+            <node oor:name="org.ossii.CalcRemoveDuplicates.OfficeNotebookBar" oor:op="replace">
+                <node oor:name="RD006" oor:op="replace">
+                    <prop oor:name="Context" oor:type="xs:string">
+                        <value>com.sun.star.sheet.SpreadsheetDocument</value>
+                    </prop>
+                    <prop oor:name="URL" oor:type="xs:string">
+                        <value>service:org.ossii.CalcRemoveDuplicates.do</value>
+                    </prop>
+                    <prop oor:name="Title" oor:type="xs:string">
+                        <value xml:lang="en-US">Remove Duplicates...</value>
+                        <value xml:lang="ru-RU">Удалить дубликаты...</value>
+                        <value xml:lang="zh-CN">删除重复项...</value>
+                        <value xml:lang="zh-TW">移除重複項...</value>
+                    </prop>
+                    <prop oor:name="Target" oor:type="xs:string">
+                        <value>_self</value>
+                    </prop>
+                </node> <!-- RD006 -->
+            </node>
+        </node> <!-- OfficeNotebookBar -->
         <node oor:name="Images">
             <node oor:name="org.ossii.CalcRemoveDuplicates.Image.RD005" oor:op="replace">
                 <prop oor:name="URL" oor:type="xs:string">
