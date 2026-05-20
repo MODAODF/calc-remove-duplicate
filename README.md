@@ -6,8 +6,8 @@ cell range.
 Customized from <https://extensions.libreoffice.org/en/extensions/show/remove-duplicates-fast>.
 
 Originally written in StarBasic, this extension has been rewritten in Python
-(via [easymacro](https://easymacro.cuates.net/)) and localized with gettext
-(en / ru / zh_CN / zh_TW).
+(via [easymacro](https://easymacro.cuates.net/), developed by Mauricio Baeza) and
+localized with gettext (en / ru / zh_CN / zh_TW).
 
 ## Usage
 
@@ -39,7 +39,7 @@ LibreOffice Calc 延伸套件：移除選取儲存格範圍中重複的列。
 
 Customized from <https://extensions.libreoffice.org/en/extensions/show/remove-duplicates-fast>。
 
-本套件原以 StarBasic 撰寫，現已改寫為 Python（透過 [easymacro](https://easymacro.cuates.net/)），
+本套件原以 StarBasic 撰寫，現已改寫為 Python（透過 Mauricia Baeza 所開發之 [easymacro](https://easymacro.cuates.net/)），
 並以 gettext 進行多語化（en / ru / zh_CN / zh_TW）。
 
 ## 使用方式
