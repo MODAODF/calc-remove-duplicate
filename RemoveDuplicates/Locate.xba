@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE script:module PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "module.dtd">
+<script:module xmlns:script="http://openoffice.org/2000/script" script:name="Locate" script:language="StarBasic">REM  *****  BASIC  *****
+Dim stringLists() As String
+
+Function getLanguage
+	GlobalScope.BasicLibraries.LoadLibrary(&quot;Tools&quot;)
+	getLanguage = GetStarOfficeLocale().language + &quot;_&quot; + GetStarOfficeLocale().country
+End Function
+
+Function getText(index)
+	getText = stringLists(index)
+End Function
+
+Sub InitLanguage
+	Select Case getLanguage
+		Case &quot;ru_&quot;
+			load_ru
+		Case &quot;zh_CN&quot;
+			load_zh_CN
+		Case &quot;zh_TW&quot;
+			load_zh_TW
+		Case Else
+			load_en
+	End Select
+End Sub
+
+Sub load_en
+	stringLists() = array( _
+		&quot;Do not support multiselection&quot;, _
+		&quot;Please select a range&quot;, _
+		&quot;Column &quot;, _
+		&quot;Select ~All&quot;, _
+		&quot;~Selection includes title&quot;, _
+		&quot;~Please select the duplicate columns (Press Ctrl to multiselect):&quot;, _
+		&quot;~OK&quot;, _
+		&quot;~Cancel&quot;, _
+		&quot;Progress&quot;, _
+		&quot;Finished in &quot;, _
+		&quot; seconds.&quot;, _
+		&quot;We found and deleted &quot;, _
+		&quot; duplicated values.&quot;, _
+		&quot;Now we have only &quot;, _
+		&quot; unique values.&quot;, _
+		&quot;No duplicates found.&quot;, _
+		&quot;Cancelled. &quot;, _
+		&quot;An error occurred! &quot;, _
+		&quot;The changes will now be undone.&quot;, _
+		&quot;No changes have been made.&quot;)
+End Sub
+
+Sub load_ru
+	stringLists() = array( _
+		&quot;Не поддерживает множественный выбор&quot;, _
+		&quot;Пожалуйста, выберите диапазон&quot;, _
+		&quot;Столбец &quot;, _
+		&quot;Выбрать всё&quot;, _
+		&quot;Столбцы содержат заголовок&quot;, _
+		&quot;Выберите столбцы с дубликатами (нажмите Ctrl для мультивыбора):&quot;, _
+		&quot;Удалить дубликаты&quot;, _
+		&quot;Отменить&quot;, _
+		&quot;Прогресс&quot;, _
+		&quot;Выполнено за &quot;, _
+		&quot; секунд.&quot;, _
+		&quot;Мы нашли и удалили &quot;, _
+		&quot; дубликатов.&quot;, _
+		&quot;Теперь у нас есть только &quot;, _
+		&quot; уникальных значения.&quot;, _
+		&quot;Дубликаты не найдены.&quot;, _
+		&quot;Отменено. &quot;, _
+		&quot;Произошла ошибка! &quot;, _
+		&quot;Изменения будут отменены.&quot;, _
+		&quot;Изменений не было.&quot;)
+End Sub
+
+Sub load_zh_CN
+	stringLists() = array(&quot;不支持多重选择区域&quot;, _
+		&quot;请选择一个区域&quot;, _
+		&quot;列 &quot;, _
+		&quot;选择全部(~A)&quot;, _
+		&quot;选区包含了列名(~S)&quot;, _
+		&quot;请选择判断重复的列（按住 Ctrl 键可以多选）(~P)：&quot;, _
+		&quot;确定(~O)&quot;, _
+		&quot;取消(~C)&quot;, _
+		&quot;Progress&quot;, _
+		&quot;Finished in &quot;, _
+		&quot; seconds.&quot;, _
+		&quot;We found and deleted &quot;, _
+		&quot; duplicated values.&quot;, _
+		&quot;Now we have only &quot;, _
+		&quot; unique vaues.&quot;, _
+		&quot;No duplicates found.&quot;, _
+		&quot;Cancelled. &quot;, _
+		&quot;An error occured! &quot;, _
+		&quot;The changes will now be undone.&quot;, _
+		&quot;No changes have been made.&quot;)
+End Sub
+
+Sub load_zh_TW
+	stringLists() = array(&quot;不支援多重選取&quot;, _
+		&quot;請選擇一個範圍&quot;, _
+		&quot;欄 &quot;, _
+		&quot;全部選取(~A)&quot;, _
+		&quot;選取區域包含了題名(~S)&quot;, _
+		&quot;請選擇判斷重複的欄（按住 Ctrl 鍵可多重選取）(~P)：&quot;, _
+		&quot;確定(~O)&quot;, _
+		&quot;取消(~C)&quot;, _
+		&quot;進度&quot;, _
+		&quot;完成時間：&quot;, _
+		&quot; 秒&quot;, _
+		&quot;我們找到並刪除了&quot;, _
+		&quot; 個重複的值。&quot;, _
+		&quot;保留了 &quot;, _
+		&quot; 不同的值。&quot;, _
+		&quot;沒有找到重複的值。&quot;, _
+		&quot;已取消。&quot;, _
+		&quot;發生錯誤！&quot;, _
+		&quot;變更將無法回復！&quot;, _
+		&quot;沒有做出任何改變。&quot;)
+End Sub
+
+</script:module>
