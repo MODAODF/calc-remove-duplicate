@@ -1,0 +1,77 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: calc-remove-duplicates\n"
+"POT-Creation-Date: 2026-05-20 12:00+0800\n"
+"PO-Revision-Date: 2026-05-20 12:00+0800\n"
+"Last-Translator: Dev Lo <develop@ossii.com.tw>\n"
+"Language-Team: Russian\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Remove Duplicates"
+msgstr "Удалить дубликаты"
+
+msgid "Remove Duplicates..."
+msgstr "Удалить дубликаты..."
+
+msgid "~Please select the duplicate columns (Press Ctrl to multiselect):"
+msgstr "Выберите столбцы с дубликатами (нажмите Ctrl для мультивыбора):"
+
+msgid "Select ~All"
+msgstr "Выбрать всё"
+
+msgid "~Selection includes title"
+msgstr "Столбцы содержат заголовок"
+
+msgid "Progress"
+msgstr "Прогресс"
+
+msgid "~OK"
+msgstr "Удалить дубликаты"
+
+msgid "~Cancel"
+msgstr "Отменить"
+
+msgid "Column "
+msgstr "Столбец "
+
+msgid "Do not support multiselection"
+msgstr "Не поддерживает множественный выбор"
+
+msgid "Please select a range"
+msgstr "Пожалуйста, выберите диапазон"
+
+msgid "Finished in "
+msgstr "Выполнено за "
+
+msgid " seconds."
+msgstr " секунд."
+
+msgid "We found and deleted "
+msgstr "Мы нашли и удалили "
+
+msgid " duplicated values."
+msgstr " дубликатов."
+
+msgid "Now we have only "
+msgstr "Теперь у нас есть только "
+
+msgid " unique values."
+msgstr " уникальных значения."
+
+msgid "No duplicates found."
+msgstr "Дубликаты не найдены."
+
+msgid "Cancelled. "
+msgstr "Отменено. "
+
+msgid "An error occurred! "
+msgstr "Произошла ошибка! "
+
+msgid "The changes will now be undone."
+msgstr "Изменения будут отменены."
+
+msgid "No changes have been made."
+msgstr "Изменений не было."
